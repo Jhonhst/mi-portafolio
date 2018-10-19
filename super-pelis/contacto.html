@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/1estilos.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/navbar-top-fixed.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="icon" href="img/superpelisicon.ico">
+  <title>Contacto</title>
+</head>
+<body style="background: rgb(39, 37, 37)">
+   <!-- inicio de navbar -->
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bordeenav">
+    <a class="navbar-brand " href="portada.php">SuperPelis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="categorias.php" >Géneros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="category.php?genero=estrenos" >Estrenos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="catalogo.php" >Catálogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+      <form action="resultados.php" method="GET" class="form-inline mt-2 mt-md-0">
+        <input name="name" class="form-control mr-sm-2" type="text" placeholder="Buscar (titulo o año)" aria-label="Search">
+        <button class="btn btn-info my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+      <div class="d-md-none mt-2">
+        <a href="#" class=""><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="" class="ml-3"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="" class="ml-3"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="" class="ml-3"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="" class="ml-3"><i class="fab fa-google-plus-g fa-2x"></i></a>
+      </div>
+    </div>
+  </nav>
+    <!-- fin de navbar -->
+      <!--inicio formulario -->
+  <div class="container mt-5 mb-5">
+    <p>Hola amig@s, si tienes un  problema, sugerencia, critica, lo que sea, infórmelo estamos 
+      dispuestos a mejorar para su mejor comodidad y ser su página preferida de películas y series. </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-xs-12 col-md-6">
+          <form role='Form'>
+            <fieldset>
+              <div class='form-group'>
+                <legend class='user_data'>Datos </legend>
+                <input type='text' name='nombre' id='nombre' placeholder='Nombre *' class='form-control input-element colorletras'/>
+                <input type='text' name='email' id='email' placeholder='Correo electrónico *' class='form-control input-element colorletras'/>
+                <input type='text' name='telefono' id='telefono' placeholder='Teléfono' class='form-control input-element'/>
+                <label for="asunto" class="text-left">Asunto *</label>
+                <select name="" id="asunto" class='form-control select-element' placeholder='Asunto' >
+                  <option class="select colorletras" value="">No ve la película</option>
+                  <option class="select colorletras" value="">No existe la película</option>
+                  <option class="select colorletras" value="">se ve mal la película</option>
+                  <option class="select colorletras" value="">No ve la película</option>
+                  <option class="select colorletras" value="">la página presenta problemas</option>
+                  <option class="select colorletras" value="">Otros</option>
+                </select>
+                <input type='text' name='pelicula' id='pelicula' placeholder='Si tiene algún problema con una película escriba aquí el nombre' class='form-control input-element'/>
+                <textarea name="" id=""  class="form-control textarea-element" placeholder="Mensaje"></textarea>
+              </div>
+              <div class='text-center'>
+                <p >Somos de los primeros en tener estrenos, desea que se le informe vía whatsapp o correo cuando tengamos los últimos estrenos de las películas mas populares.</p>
+
+                <p>Solo recibirá mensaje cuando tengamos un estreno en nuestra plataforma *</p>
+                <input type='radio' name='radio' id='si' />
+                <label for='si' >Si*</label>
+                <input type='radio' name='radio' id='no' />
+                <label for='no' class='label-class'>No*</label>
+              </div>
+              <div class='text-center'>
+                <button type='button' class='btn btn-primary btn-save form-control'>Guardar</button>
+              </div>
+            </fieldset>
+         </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- inicio footer pc-->
+  <footer class="footer text-white d-none d-lg-block">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 mt-2">
+            <a href="#" class=""><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-google-plus-g fa-2x"></i></a>
+          </div>
+         </div>
+      </div>
+      <p class=" text-white mt-3">Si tienes un problema, sugerencia, critica, lo que sea, infórmelo estamos dispuestos a mejorar para su mejor comodidad y ser su página preferida de películas y series. <a href="contacto.html"> CONTACTO</a></p>
+        <p>	 © 2018 SuperPelis</p>
+      <p>No se reproduce ni se almacenan archivos en nuestros servidores, El contenido almacenado en esta web se encuentra almacenada en servidores externos.</p>
+    </div>
+  </footer>
+       <!-- fin footer pc-->
+    <!-- inicio footer tablet-->
+  <footer class="footer2 text-white d-none d-sm-block d-lg-none">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 mt-2">
+            <a href="#" class=""><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-google-plus-g fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class=" text-white mt-3">Si tienes un problema, sugerencia, critica, lo que sea, infórmelo estamos dispuestos a mejorar para su mejor comodidad y ser su página preferida de películas y series. <a href="contacto.html"> CONTACTO</a></p>
+      <p>	 © 2018 SuperPelis</p>
+      <p>No se reproduce ni se almacenan archivos en nuestros servidores, El contenido almacenado en esta web se encuentra almacenada en servidores externos.</p>
+    </div>
+  </footer>
+        <!-- fin footer tablet-->  
+       <!-- inicio footer movil-->
+  <footer class="footer3 text-white d-sm-none">
+    <div class="container">
+       <div class="container-fluid">
+         <div class="row">
+          <div class="col-12 mt-2">
+            <a href="#" class=""><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="" class="ml-1"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="" class="ml-1"><i class="fab fa-google-plus-g fa-2x"></i></a>
+            </div>
+        </div>
+      </div>
+      <p class=" text-white mt-3">Si tienes un problema, sugerencia, critica, lo que sea, infórmelo estamos dispuestos a mejorar para su mejor comodidad y ser su página preferida de películas y series. <a href="contacto.html"> CONTACTO</a></p>
+      <p>	 © 2018 SuperPelis</p>
+      <p>No se reproduce ni se almacenan archivos en nuestros servidores, El contenido almacenado en esta web se encuentra almacenada en servidores externos.</p>
+     </div>
+  </footer>
+       <!-- fin footer movil-->
+     <!-- js -->
+  <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+</body>
+</html>

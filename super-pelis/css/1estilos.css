@@ -1,0 +1,553 @@
+
+
+*{
+    color: rgb(255, 255, 255);
+    
+}
+.bordeenav {
+  width: 100%;
+  background-size: cover;
+  box-shadow:0 0  10px rgba(7,7,7,.7);
+  min-height: 198px;
+}
+
+.bordeenav  {
+  border-style: none;
+  vertical-align: middle;
+}
+.navbar{
+  background: rgba(39, 37, 37, 0.918) !important;
+  min-height: 80px;
+  font-size:20px;
+}
+.navbar-brand{
+  font-size:30px !important;
+}
+.nav-link:hover,.navbar-brand:hover{
+  opacity: 0.7;
+}
+
+/*inicio portada*/
+.imglados{
+    margin-top:0.5rem; 
+    max-height: 10.5rem;
+}
+.imglados2{
+    margin-top:0.0rem; 
+    max-height: 10.5rem;
+    
+}
+
+.imgizq{
+    width: 120%;
+}
+.carousel-item {
+  
+    max-height: 21rem;
+    background-color: rgb(0, 0, 0);
+  }
+  .carousel-item > img {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  
+  @media (min-width: 768px) {
+  
+    .imglados{
+      margin-top:0.5rem; 
+      min-height: 8.5rem;
+      max-height: 8.5rem;
+  
+  }
+  .imglados2{
+      margin-top:0.0rem; 
+      min-height: 8.6rem;
+      max-height: 8.5rem;
+      
+  }
+  .carousel-item {
+    
+    min-height: 17.2rem;
+    max-height: 17.2rem;
+    background-color: rgb(0, 0, 0);
+  }
+  }
+  
+
+  
+  @media (min-width: 900px) {
+  
+    .imglados{
+      margin-top:0.5rem; 
+      min-height: 9.5rem;
+      max-height: 9.5rem;
+  
+  }
+  .imglados2{
+      margin-top:0.0rem; 
+      min-height: 9.5rem;
+      max-height: 9.5rem;
+      
+  }
+  .carousel-item {
+   
+    min-height: 19rem;
+    max-height: 19rem;
+    background-color: rgb(0, 0, 0);
+  }
+  }
+
+
+
+
+
+  @media (min-width: 900px) {
+  
+    .imglados{
+      margin-top:0.5rem; 
+      min-height: 10.5rem;
+      max-height: 10.5rem;
+  
+  }
+  .imglados2{
+      margin-top:0.0rem; 
+      min-height: 10.5rem;
+      max-height: 10.5rem;
+      
+  }
+  .carousel-item {
+  
+    min-height: 21rem;
+    max-height: 21rem;
+    background-color: rgb(0, 0, 0);
+  }
+  }
+
+
+
+
+
+  /*fin portada */
+
+/*inicio footer */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+     margin-bottom: 0px; /* Margin bottom by footer height */
+  }
+  .footer {
+     position: relative; 
+
+    width: 100%;
+    height: 220px; /* Set the fixed height of the footer here */
+   /* line-height: 60px;  Vertically center the text there */
+    background-color: rgb(4, 70, 64);
+    border-top:solid 3px white ;
+    border-bottom:solid 10px white ;
+     
+  }
+
+  .footer2 {
+    position: relative; 
+  
+   width: 100%;
+   height: 280px; /* Set the fixed height of the footer here */
+  /* line-height: 60px;  Vertically center the text there */
+   background-color: rgb(4, 70, 64);
+   border-top:solid 3px white ;
+   border-bottom:solid 10px white ;
+    
+ }
+
+ .footer3 {
+  position: relative; 
+
+ width: 100%;
+ height:400px; /* Set the fixed height of the footer here */
+/* line-height: 60px;  Vertically center the text there */
+ background-color: rgb(4, 70, 64);
+ border-top:solid 3px white ;
+ border-bottom:solid 10px white ;
+
+}
+  
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+  
+  .container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+  /* fin de footer */
+
+
+  /*inicio color letras de contacto */
+  .colorletras{
+      color: black;
+  }
+  /*fin color letras de contacto */
+ 
+
+/* inicio fondo de pelis */
+
+.fondo{
+    top:-8px;
+    
+    background-repeat:none; 
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    position: relative; 
+    background-position: center; 
+   }
+   .fondo:before{
+    
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgb(12, 12, 12);
+      position: absolute;
+      opacity: 0.5;
+   } 
+/* fin fondo de pelis */
+
+/* inicio de datos de la peli */
+.datos p{
+ margin-top:1px;
+ margin-bottom:0;
+ 
+}
+.datostablet{
+background: rgb(0, 0, 0,0.8);
+padding: 10px;
+border-radius: 10px; /*propiedad CSS3*/
+-ms-border-radius: 10px; /*para IE 8*/
+-moz-border-radius:10px; /*Firefox*/
+-webkit-border-radius: 10px; /*WebKit y Safari*/
+-khtml-border-radius: 10px;
+
+}
+
+.cortar{
+    width:600px;
+    height:20px;
+    padding:20px;
+    border:1px solid rgb(182, 182, 189);
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+    overflow:hidden;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .cortar:hover {
+    width: 100%;
+    white-space: initial;
+    overflow:visible;
+    cursor: pointer;
+    padding-bottom: 200px;
+  }
+
+  .cortarmovil{
+    width:200px;
+    height:20px;
+    padding:20px;
+    border:1px solid rgb(182, 182, 189);
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+    overflow:hidden;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .cortarmovil:hover {
+    width: 100%;
+    white-space: initial;
+    overflow:visible;
+    cursor: pointer;
+    padding-bottom: 700px;
+  }
+  /* fin  de datos de la peli */
+
+ 
+
+
+.bordee {
+    width: 100%; 
+    background-size: cover;
+    box-shadow:0 0  10px rgba(7,7,7,.7);
+    min-height: 198px;
+}
+
+.bordee  {
+    border-style: none;
+    vertical-align: middle;
+}
+
+
+
+
+
+/*inicio hover todo esto es para cuando salga el titulo en la imagen en la portada categoria o categorias */
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+    transition: opacity 0.6s, transform 0.6s;
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.6s;
+    transition: all 0.35s;
+  }
+  
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+    transition: opacity 0.6s, transform 0.6s;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+  }
+  
+  .hovereffect a {
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 1;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+    transition: opacity 0.35s, transform 0.6s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+  
+  .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+    
+  .imglados:hover,.imglados2:hover,.imgmedio:hover{
+  opacity: 0.7;
+  }
+
+ 
+/*fin hover todo esto es para cuando salga el titulo en la imagen en la portada categoria o categorias */
+
+
+
+
+/* inicio del modal */
+
+
+
+
+
+.modal-dialog {
+ 
+  max-width: 800px;
+
+  margin: 30px auto;
+}
+
+
+
+.modal-body {
+  background: black;
+position:relative;
+
+}
+.close {
+ 
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:rgb(255, 255, 255);
+opacity:0.9;
+}
+/* fin del modal */
+
+
+/* flechas */
+.triangulo {
+  border-style: solid;
+  border-width: 21px;
+  width: 0;
+  height: 0;
+}
+.triangulo>div {
+  border-style: solid;
+  border-width: 10px;
+  width: 0;
+  height: 0;
+  position:relative;
+}
+
+
+.triangulo.up {
+  border-color: #408c99 transparent transparent transparent;
+}
+.triangulo.up>div {
+  border-color: white transparent transparent transparent;
+  top:-21px;
+  left:-10px;
+}
+.triangulo.down {
+  border-color: transparent transparent #408c99 transparent;
+}
+.triangulo.down>div {
+  border-color: transparent transparent white transparent;
+  top:1px;
+  left:-10px;
+}
+.triangulo.down:hover,.triangulo.down>div:hover{
+  opacity: 0.7;
+}
+/* flechas */
+
+/*inicio el boton */
+.myButton {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+  background-color:#408c99;
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+    
+
+/* fin boton el del catalago */
+.titulos{
+  text-decoration: none ; 
+  color: white ;
+}
+
+.titulos:hover{
+  text-decoration: none ;
+   color: white ;
+   opacity: 0.7;
+}
+
+.boton{
+  position: relative;
+}
+
+.contenedorr{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.idioma{
+  background: rgba(10, 10, 10, 0.8);
+  font-size:12px;
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+}
+

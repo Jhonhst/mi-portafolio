@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		.triangulo {
+			border-style: solid;
+			border-width: 21px;
+			width: 0;
+			height: 0;
+		}
+		.triangulo>div {
+			border-style: solid;
+			border-width: 10px;
+			width: 0;
+			height: 0;
+			position:relative;
+		}
+ 
+		.triangulo.right {
+			border-color: transparent transparent transparent black;
+		}
+		.triangulo.right>div {
+			border-color: transparent transparent transparent white;
+			top:-10px;
+			left:-21px;
+		}
+		.triangulo.left {
+			border-color: transparent black transparent transparent;
+		}
+		.triangulo.left>div {
+			border-color: transparent white transparent transparent;
+			top:-10px;
+			left:1px;
+		}
+		.triangulo.up {
+			border-color: black transparent transparent transparent;
+		}
+		.triangulo.up>div {
+			border-color: white transparent transparent transparent;
+			top:-21px;
+			left:-10px;
+		}
+		.triangulo.down {
+			border-color: transparent transparent black transparent;
+		}
+		.triangulo.down>div {
+			border-color: transparent transparent white transparent;
+			top:1px;
+			left:-10px;
+		}
+	</style>
+</head>
+ 
+<body>
+ 
+<div class="triangulo right">
+	<div></div>
+</div>
+<br>
+<div class="triangulo left">
+	<div></div>
+</div>
+<br>
+<div class="triangulo up">
+	<div></div>
+</div>
+<br>
+<div class="triangulo down">
+	<div></div>
+</div>
+ 
+ 
+</body>
+</html>

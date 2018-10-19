@@ -1,0 +1,447 @@
+*{
+    color: beige;
+}
+
+/*inicio fondo */
+body{
+    
+    /* background-color: rgba(9, 153, 81, 0.281); */
+    background-image: url('../img/fondo-colores.jpg');
+    background-repeat:none; 
+    width: 100%;
+    height: 100%; 
+    background-size: 100%;
+    position: relative; 
+    padding: 0%;
+    border: 0px;
+}
+
+/*fin fondo */
+
+/*inicio menu */
+.menu-grande{
+    background-color: rgba(8, 42, 71, 0.267);
+}
+
+.logo{
+    color: blanchedalmond;
+    margin-top:35px; 
+    font-family: 'Oleo Script', cursive;
+    font-size: 6rem;
+    
+}
+
+.borde{
+   border-top: 3px solid white; 
+   border-bottom: 3px solid white; 
+}
+
+.menus{
+    margin-top:100px;
+}
+
+.munu-descripcion{
+    margin-top:-50px; 
+    font-family: 'Oleo Script', cursive;
+    font-size: 2rem;
+}
+
+.munu_individual{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.munu_individual:hover{
+    font-size: 110%;
+    text-decoration: none;
+    color: rgb(40, 185, 149);
+}
+
+@media only screen and (max-width: 1200px) {
+    .logo{
+        color: blanchedalmond;
+        margin-top:35px; 
+        font-family: 'Oleo Script', cursive;
+        font-size: 5rem;
+        
+    }
+   
+
+    .munu_individual{
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+    }
+   
+}
+
+@media only screen and (max-width: 992px) {
+    .logo{
+        color: blanchedalmond;
+        margin-top:20px; 
+        font-family: 'Oleo Script', cursive;
+        font-size: 3.5rem;
+        
+    }
+
+    .munu-descripcion{
+        margin-top:-30px; 
+        font-family: 'Oleo Script', cursive;
+        font-size: 1.5rem;
+    }
+
+    .menus{
+        margin-top:50px;
+    }
+}
+
+/* fin de menu */
+
+.bordee {
+    width: 100%; 
+    background-size: cover;
+    box-shadow:0 0  20px rgba(7,7,7,.7); 
+}
+
+/* inicio menu movil */
+.logo-movil{
+    color: blanchedalmond;
+    margin-top:0px; 
+    font-family: 'Oleo Script', cursive;
+    font-size: 2.5rem;
+}
+.munu-descripcion-movil{
+    margin-top:-30px; 
+    font-family: 'Oleo Script', cursive;
+    font-size: 1.1rem;
+}
+.navbar-movil{
+    background-color: rgba(15, 47, 75, 0.342);
+}
+.boton-movil{
+    background-color:  rgba(40, 185, 149, 0.596);
+}
+
+/* fin menu movil */
+
+/* inicio de footer */
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color:rgb(8, 16, 24);
+    margin-top: -15px;
+  
+}
+.cuerpo-footer{
+    margin-top:20px;
+    text-align: center;
+}
+/* fin de footer */
+
+/* inicio cuerpo de proyectos slider*/
+.informacion-proyecto{
+background-color: blueviolet;
+}
+.boton-slider{
+     margin-bottom: 20px;
+     font-family: 'Oleo Script', cursive;
+}
+@media only screen and (max-width: 767px) {
+    .boton-slider{
+        margin-left: 40%;
+
+   }
+}
+.containerr{
+    width: 80%;
+    margin-top:30px;
+    display:block;
+    margin-right:10%;
+    margin-left:10%;
+}
+/* @media only screen and (max-width: 768px) {
+.containerr{
+    width: 100%;
+    margin-top:0;
+    margin-right:0%;
+    margin-left:0%;
+}
+
+} */
+/* fin cuerpo de proyectos slider*/
+
+
+/* inicio cuerpo de proyectos galeria*/
+.fondo-galerias{
+    background-color:rgba(21, 133, 161, 0.993) ;
+  position: relative;
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 7% 100%, 7% 29%, 0% 25%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 7% 100%, 7% 29%, 0% 25%); */
+}
+
+.imagen-galeria{
+    position: relative;
+    margin-bottom: 15px;
+  
+}
+.fass{
+    color:white;
+    position: relative;
+    font-size: 2rem;  
+    margin-left: 83px;
+    margin-top: 5px;
+    padding: 3px;
+    border: 2px solid white;
+   
+}
+.fass:hover{
+    cursor:pointer; cursor: hand;
+    background-color:rgba(175, 45, 45, 0.103) ;
+    font-size: 2.1rem;
+}
+
+.texto-galeria{
+    z-index: 1;
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+}
+
+.descripcion-proyecto{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top:-60%;
+    opacity: 0;
+}
+
+.boton-galeria{
+    margin-left: 35%;
+    position: absolute;
+    margin-top:-30%;
+    opacity: 0;
+    font-family: 'Oleo Script', cursive;
+   
+}
+/* fin cuerpo de proyectos galeria*/
+
+
+/* inicio de cuerpo del proyecto individual */
+.titulo-proyecto{
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+}
+
+.primer-parrafo{
+    padding: 10px;
+    color: rgb(40, 185, 149);
+    text-align: center;
+    background-color:rgb(8, 16, 24);
+    font-size: 1.5rem;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+.cuerpo{
+    background-color: rgba(15, 47, 75, 0.342);
+}
+
+/* inicio de slide de galeria */
+
+.imagen-central{
+    padding:0px; 
+    z-index: 1;
+    position: relative;
+    margin-top:-24%;
+    
+}
+
+.imagen-izquierda, .imagen-derecha{
+   
+    z-index: 1;
+}
+
+#slider-izquierda:hover, #slider-derecha:hover{
+    z-index: 1;
+    cursor:pointer; cursor: hand;
+    opacity: 0.8;
+}
+.fondo-slider{
+    padding: 15%;
+    background-color: rgba(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    margin-top: -30%;
+    -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 89% 65%, 80% 90%, 50% 100%, 20% 90%, 12% 68%, 0% 35%, 20% 10%);
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 89% 65%, 80% 90%, 50% 100%, 20% 90%, 12% 68%, 0% 35%, 20% 10%);
+}
+/* fin de slide de galeria */
+
+/* primer slider pero en movil */
+.slider{
+    position: relative;
+    z-index: 1;
+}
+.parte-baja-primer{
+    
+    width: 70%;
+    position: relative;
+    z-index: 0;
+    margin-top: -35%;
+    margin-left:15%; 
+}
+
+/* inicio imagenes para mostrar los tamaños */
+/* para tablet y pc */
+.movil-imagen{
+    margin-left: 40%;
+}
+.pc-imagen{
+    margin-left: -8%;
+}
+.fondo-slider2{
+    padding: 15%;
+    background-color: rgba(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    margin-top: -30%;
+    -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 89% 65%, 80% 90%, 50% 100%, 20% 90%, 12% 68%, 0% 35%, 20% 10%);
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 89% 65%, 80% 90%, 50% 100%, 20% 90%, 12% 68%, 0% 35%, 20% 10%);
+}
+
+
+.pc-imagen,.movil-imagen,.parte-alta{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .pc-imagen{
+        position: absolute;
+        margin-top:20px; 
+    }
+}
+
+/* para movil */
+.parte-alta{
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+}
+.parte-baja{
+    opacity: 0;
+    position: relative;
+    z-index: 0;
+    max-width: 100%;
+    margin-top: -60%;
+}
+/* fin imagenes para mostrar los tamaños */
+.visitar-web{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+.visitar-web:hover{
+    background-color:rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(88, 238, 200);
+    font-size: 3rem;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+.flecha{
+    color:white;
+    font-size: 2rem;       
+}
+/* fin de cuerpo del proyecto individual */
+
+/*inicio sobre mi */
+.titulo-sobre{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+}
+.lista{
+    list-style:none;
+}
+.lenguajes{
+    font-family: 'Oleo Script', cursive;
+    font-size: 2rem;
+    color: rgb(40, 185, 149);
+    border: 1px solid rgb(212, 167, 82);
+}
+.conocimientos{
+    background-color:rgb(8, 16, 24);
+    color: rgb(40, 185, 149);
+}
+
+.informacion{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 1.2rem;
+    text-indent: 1cm;
+}
+.cuerpo-sombremi{
+    background-color:rgba(8, 16, 24, 0.575);
+}
+
+.iconos{
+    margin-top:10px; 
+    font-size: 2.2rem;
+    color: rgb(40, 185, 149);
+}
+.icono-email{
+    margin-top:10px; 
+    font-size: 1.7rem;
+    color: rgb(40, 185, 149);
+}
+.los-iconos{
+    display: none;
+}
+.whatsapp:hover{
+    color: rgb(55, 233, 108);
+    background-color: white;
+    border-radius: 30%;
+}
+.facebook:hover{
+    color: rgb(33, 108, 179);
+    background-color: white;
+    border-radius: 30%;
+}
+.linkedin:hover{
+    color: rgb(13, 68, 119);
+    background-color: white;
+    border-radius: 30%;
+}
+.envelope:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 19, 19);
+    border-radius: 30%;
+}
+.yo{
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+.piso{
+    display: none;
+    position: relative;
+    z-index: 0;
+    margin-top: -55%;
+}
+.paruno{
+    color: rgb(202, 188, 59);
+}
+.pardos{
+    color: rgb(69, 233, 137);
+}
+.partres{
+    color: rgb(204, 51, 166);
+}
+
+
+/*fin sobre mi */

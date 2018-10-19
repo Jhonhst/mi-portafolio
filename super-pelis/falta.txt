@@ -1,0 +1,8 @@
+subir las peliculas a los servidores
+falta colocar la parte de comentarios
+tambien para que la gente repporte que esta rota la pelicula
+ver que se vea bien para movil la pelicula 
+en modificar falta para modificar categorias e idiomas
+busqueda extrema
+colocarle al navbar una linea divisora
+

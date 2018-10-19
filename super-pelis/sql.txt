@@ -1,0 +1,52 @@
+
+falta crear la tabla de categorias y relacion
+CREATE TABLE datos(iddatos INT UNSIGNED AUTO_INCREMENT,imagen text,video text,titulo VARCHAR(255),anio VARCHAR(20),duracion TINYINT UNSIGNED, sinopsis TEXT ,idioma SET('espaniol','subespaniol'),PRIMARY KEY(iddatos));
+
+//esto es para cuando me toca buscar
+SELECT * FROM datos WHERE idioma='espaniol','subespaniol';
+
+
+
+
+//aqui selecciono en relaciones el numero sale con parentesis o sin parentesis
+SELECT iddatos FROM relacion WHERE idcategorias='2';
+
+//esto convierte en strin creo 
+$titulo=isset($_POST['buscar'])     ? SQLite3::escapeString($_POST['buscar'])     : '';
+
+
+y aqui el glorioso que arregla el problema de los acentos y eñes
+ <?php foreach($listado5 as $dato): ?> 
+    <?php $titulo2=utf8_encode($dato['titulo2']);?>
+        <div class="col-4 col-sm-3 col-md-2 p-1"><div class = "hovereffect"><a href="pelicula.php?titulo=<?php echo $dato['titulo'] ?>"><img class=" img-fluid" src ="<?php echo $dato['imagen'] ?>" alt = ""><div class = "overlay"><h2><?php echo $titulo2  ?> </h2></div></a></div></div>
+
+         <?php endforeach ?>
+
+para cuando coloque las categorias
+category.php?genero=anime&pagina=1
+
+
+
+//esto es para llamar la categoria que la perosona mandoa buscar
+SELECT datos.iddatos AS id, imagen,video,titulo,anio,duracion,sinopsis,idioma,relacion.iddatos AS rd,relacion.idcategorias AS rc,categorias.idcategorias AS ic,genero FROM datos AS datos JOIN relacion AS relacion  ON datos.iddatos=relacion.iddatos  JOIN categorias AS categorias ON relacion.idcategorias=categorias.idcategorias where  relacion.idcategorias=2;
+
+//esto mejor
+SELECT datos.iddatos AS id, imagen,video,titulo,anio,duracion,sinopsis,idioma,relacion.iddatos AS rd,relacion.idcategorias AS rc,categorias.idcategorias AS ic,genero FROM datos AS datos JOIN relacion AS relacion  ON datos.iddatos=relacion.iddatos  JOIN categorias AS categorias ON relacion.idcategorias=categorias.idcategorias where  genero='Anime';
+
+
+la forma de llegar mediante los link
+category.php?genero=anime&pagina=1
+
+
+http://localhost/pelis/categoriabuscada.php?categoria=Aventura
+http://localhost/pelis/categoriabuscada.php?categoria=aventura?pagina=1
+
+
+buscador
+SELECT * FROM datos WHERE titulo LIKE '%'.$variable.'%';
+
+
+
+para set en datos tabla por ciacaso
+ALTER TABLE `datos` CHANGE `idioma` `idioma` set('espaniol','subespaniol','espanioles') DEFAULT NULL;
+
