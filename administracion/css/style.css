@@ -1,0 +1,83 @@
+/* esconde algunos botones luego de js los llamo */
+.botones{
+    display: none;
+}
+
+/* los botones del munu cencillo */
+.menu-admin{
+    background-color: rgba(17, 168, 29, 0.918);
+    text-decoration: none;
+    color: white;
+}
+
+.boton-gastos{
+    color: rgb(247, 247, 247);
+    font-size: 1.5rem;
+    margin-left: 7%;
+    text-decoration:none
+}
+.boton-gastos:hover{
+    color:rgb(209, 202, 202);
+    text-decoration:none
+}
+.boton-inversion{
+    color: rgb(247, 247, 247);
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton-inversion:hover{
+    color:rgb(209, 202, 202);
+    text-decoration:none
+}
+.boton-venta{
+    color: rgb(247, 247, 247);
+    font-size: 1.5rem;
+    margin-left: 15%;
+}
+.boton-venta:hover{
+    color:rgb(209, 202, 202);
+    text-decoration:none
+}
+
+/* es un mensaje que se mostrara al intentar modificar algún elemento en inversion o gastos */
+.mensaje-modificacion{
+    display: none;
+}
+
+/* footer */
+.footer{
+    height: 100px;
+    background-color: rgb(15, 90, 201);
+}
+.texto-footer{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+
+
+/* bordes 3d */
+.borde-n{
+    border: solid 2px black;
+}
+.bordee {
+    width: 100%; 
+    background-size: cover;
+    box-shadow:0 0  20px rgba(7,7,7,.7); 
+}
+
+/* individual */
+.individual{
+    display: none;
+}
+.texto-footer{
+    font-family: 'Oleo Script', cursive;
+}
+
+.texto-titulo{
+    font-family: 'Oleo Script', cursive;
+    color: rgb(255, 0, 0);
+}

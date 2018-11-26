@@ -270,6 +270,7 @@ background-color: blueviolet;
     opacity: 0.8;
 }
 .fondo-slider{
+    display: none;
     padding: 15%;
     background-color: rgba(255, 255, 255);
     width: 100%;
@@ -277,6 +278,12 @@ background-color: blueviolet;
     margin-top: -30%;
     -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 89% 65%, 80% 90%, 50% 100%, 20% 90%, 12% 68%, 0% 35%, 20% 10%);
     clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 89% 65%, 80% 90%, 50% 100%, 20% 90%, 12% 68%, 0% 35%, 20% 10%);
+}
+@media only screen and (max-width: 767px) {
+    .fondo-slider{
+        display: none !important;
+
+   }
 }
 /* fin de slide de galeria */
 
@@ -445,3 +452,6 @@ background-color: blueviolet;
 
 
 /*fin sobre mi */
+.st{
+color:white;
+}

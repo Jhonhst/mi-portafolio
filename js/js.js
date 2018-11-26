@@ -74,4 +74,10 @@ $(function(){
     });
     //fin animaciones en sobre mi
 
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('.fondo-slider').slideDown(1000);     
+                
+        }
+    });
 })

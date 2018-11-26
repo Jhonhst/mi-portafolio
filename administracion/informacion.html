@@ -1,0 +1,105 @@
+
+<!-- cabecera -->
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Venta Administración</title>
+    <link rel="stylesheet" href="librerias/bootstarp 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="librerias/font-awesome/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+</head>
+<body>
+    <!--inicio navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary bordee">
+  <a class="navbar-brand texto-titulo" >Administración</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="inversion.php">Agregar <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="lista.php">Lista</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link " href="informacion.html">¿Como funciona?</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+    <!-- fin de navbar -->
+<div class="mt-4 container">
+    <h4>¿Como es el funcionamiento de la aplicación?</h4>
+    <p>Es una aplicación muy sencilla, con un proceso simple pero con un gran resultado.</p>
+    <p>Esta aplicación esta hecha para pequeños o medianos comerciantes, la cual le ayudara a tener la información básica que debe saber de su negocio, las cuales son, inversión, gastos, venta, la ganancia del negocio y la ganancia personal.</p>
+
+    <h5>En la pestaña "agregar" encontramos otras tres pestañas las cuales son Inversión, gastos y venta:</h5>
+
+    <h5>Inversión</h5>
+    <p>La inversión es todo aquello que se compra para posteriormente revender y adquirir ganancias.</p>
+    <p>En esta pestaña se encuentran tan solo dos campos para ingresar datos, el primero es el nombre, donde se coloca el nombre de la inversión el cual puede ser cualquiera, por ejemplo: supongamos que es una tienda, y llego el pedido de la gaseosa, pues se coloca en el nombre "la gaseosa" pero puede ser cualquier nombre, el cual se entienda o se reconozca fácilmente. En el siguiente campo se coloca el valor de esa inversión, sigamos con el ejemplo de la gaseosa, y digamos que el valor de ese pedido fue de $ 400.000, entonces ese va ser el dato que debe ir en el valor.</p>
+
+    <p>Al agregar una inversión con su nombre y valor se va a desplegar en la parte inferior una lista, donde va salir todas las inversiones del día, se deben colocar todas estas, por mas simple que sean se deben colocar para que la aplicación pueda hacer su trabajo de la mejor manera. Esta lista que se desplegara tendrá cada una de las inversiones y a su ves tendrá dos botones uno servirá para modificar y eliminar.</p>
+
+    <p>Algo para tener en cuenta es que en la parte inferior de la lista de inversiones se tendrá el resultado de todas estas.</p>
+
+    <h5>Gastos</h5>
+    <p>los gastos son todo aquello que se compra o su consume por algún costo y no producirá ganancia, ejemplo: el arriendo, los servicios (agua, luz, gas...), algún gasto personal, entre otros.</p>
+    <p>Las forma de ingresar los gastos es igual que la inversión. Se desplegara una lista con los botones, modificar y eliminar y con su respectivo resultado al final.</p>
+
+    <p>Al igual que inversión se debe colocar todos los gastos por mas simple que sean se deben colocar, para que la aplicación haga un buen trabajo, no hay limite ni de inversiones ni de gastos, así que lo mejor es colocar todos los datos.</p>
+
+    <h5>Venta</h5>
+    <p>En esta pestaña tendremos el resultado de la venta del día, se encontraran cinco campos; efectivo, inversión, gastos, dinero que se llevo y Dinero extra.</p>
+    <p><strong>Efectivo:</strong> al final del día se cuenta el dinero que se tiene en caja y ese total se coloca en este campo, sumando incluso el dinero que se llevo, es decir, el que no pertenece a la venta de el día actual.</p>
+    <p><strong>Inversión:</strong>  este campo no se puede modificar ya que es el resultado de la inversión del día, para modificarse se debe ir a la pestaña de inversiones y hacer los cambios que se desean.</p>
+    <p><strong>Gastos:</strong>  este campo tampoco se puede modificar ya que es el resultado de los gastos del día, para modificarse se debe ir a la pestaña de gastos y hacer los cambios que se desean.
+    </p>
+    <p><strong>Dinero que se llevo:</strong> muchas veces por no decir todo el tiempo, cuando se abre el negocio se tiene dinero que no pertenece a la venta del día actual, si no de días anteriores, es el dinero que puede ser usado como cambio, o cantidades altas como para cancelar algún pedido especial, entonces ese dinero que se llevo se debe colocar en este campo.</p>
+    <p><strong>Dinero extra:</strong> este campo normalmente llevara un cero, ya que se debe colocar el dinero que no pertenece al negocio.</p>
+    <h5>¿Como saber la venta exacta?</h5>
+    <p>La formula es muy simple y exacta; se suma el efectivo más la inversión mas el gasto y a estos se le resta el dinero que se llevo y el dinero extra y el resultado será la venta exacta del día, todo esto se hace en automático, solo se deben colocar los datos, tener muy en cuenta que es muy importante que se coloquen todas las inversiones y los gastos, en la venta también colocar los datos exactos para que la aplicación pueda hacer un excelente trabajo.</p>
+
+    <h4>La lista</h4>
+    <p>En la pestaña lista se encuentran los datos que el comerciante debe saber acerca de su negocio las cuales son, inversión, gastos, venta, la ganancia del negocio y la ganancia personal o ganancia menos gastos.</p>
+    <p>En la parte inferior se encuentra la tabla de color negro que dirá los datos de cada día:</p>
+    <p><strong>Fecha:</strong> es la fecha de ese registro.</p>
+    <p><strong>Inversión:</strong> La inversión total de ese día.</p>
+    <p><strong>Gastos:</strong> Los gatos totales de ese día.</p>
+    <p><strong>Venta:</strong> La venta total de ese día.</p>
+    <p><strong>Ganancia o Ganancia del negocio:</strong> Para obtener la ganancia del negocio se le resta a la venta la inversión y esto retorna la ganancia, esto lo hace la aplicación en automático,  <strong>Nota: </strong>tener en cuenta que habrá días en que la ganancia de negativa y es normal debido a que todo negocio tiene días en que la inversión es más alta que la venta. Este dato le dirá si el negocio esta dando resultados positivos al hacer la suma de las ganancias de todos los días.</p>
+    <p><strong>Ganancia menos gastos:</strong> como su nombre lo dice a la ganancia se le restan los gastos, ese total es la ganancia personal, este dato es muy importante porque le dirá al comerciante si sus gastos son muy excesivos y cuanto le afectan.</p>
+    <p><strong> En la parte más superior se encuentra una tabla en azul celeste que solo tendrá un registro pero este es el total de las fechas que se establezcan; en la parte superior se encuentra un desplegable el cual tendrá tres opciones, última semana, último mes y todo.</strong></p>
+    <p><strong>Última semana: </strong> En el cuadro azul saldrá el resultado de la última semana, es decir, los últimos 7 días, se sumaran todos los resultados de los últimos 7 días de la inversión, gastos, ganancia, y la ganancia menos gastos, En la parte inferior en el cuadro negro saldrán esos 7 registros pero de manera individual.</p>
+    <p><strong>Último mes: </strong> es el mismo proceso que en última semana solo que en ves de sumar los totales de los últimos 7 registros, sumara los últimos 30 registros, y en la parte inferior en el cuadro negro saldrán los últimos 30 registros de manera individual.</p>
+    <p><strong>Todo: </strong> Realiza el mismo proceso que ultima semana y mes solo que este tomara todos los registros que existan desde que se empezó, sumando todos los totales.</p>
+    <p>No solo se puede seleccionar por mes o semana también se puede por fecha, en la parte superior hay un campo para seleccionar una fecha única, y esta retornara los datos de esa fecha, también se puede seleccionar desde una fecha asta otra fecha sumando todos los totales en el cuadro azul, y retornando todos los registros de manera individual en le cuadro negro.</p>
+    <p>En el cuadro negro si se le da clic a alguna fecha esta retornara el historial de ese día, todas las inversiones, gastos y la venta donde se pueden hacer modificaciones y eliminaciones.</p>
+
+    <p>Esta es una aplicación muy automatizada, lo único que se debe hacer es colocar las inversiones, gastos y venta de cada día, que el resto lo hace ella. En la lista no hay que preocuparse si se hace alguna eliminación o modificación la lista retornara el resultado exacto. <strong>Nota: </strong> Si ya hay un registro completo, es decir, ya tiene los datos de la inversión, gastos y venta, y se hace alguna modificación en inversión o gastos hay que actualizar la venta ya que ella tiene un registro ya guardado, lo que se debe hacer es ir a venta dar clic en modificar y luego en guardar modificación y ya estaría actualizada.</p>
+
+</div>
+
+    <!-- footer -->
+    <br>
+    <br>
+    <br>
+    </div>
+<div class="footer">
+  <p class="texto-footer">Unos de los grandes secretos para el éxito es la buena administración</p>
+</div>
+    <script src="librerias/bootstarp 4/js/1jquery-3.3.1.slim.min.js"></script>
+    <script src="librerias/bootstarp 4/js/2popper.min.js"></script>
+    <script src="librerias/bootstarp 4/js/3bootstrap.min.js"></script>
+    <script src="librerias/jquery 3/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

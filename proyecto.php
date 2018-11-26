@@ -22,7 +22,8 @@ include 'traer.php';
         <div class=" offset-2 col-8 imagen-central d-none d-md-block">
             <img src="img/<?php echo $reg['imgpcuno'] ?>" class="img-fluid mt-2 " id="slider-centro" alt="">
         </div>
-        <div class="fondo-slider d-none d-md-block bordee" >.</div>    
+        <div class="fondo-slider  bordee" >.</div>   
+         
          <!--fin primer slider para que se vea de tablet en adelante -->    
     </div>
           
