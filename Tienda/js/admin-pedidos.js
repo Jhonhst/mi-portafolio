@@ -80,8 +80,9 @@ function iniciar(url,tabla){
             // console.log(respuesta);
             let datos = JSON.parse(respuesta);
             let modulo = ''; 
+            let id = ''
             datos.forEach(dato => {
-                retornarId(dato.idpe);
+                id = dato.idpe;
 
                 modulo +=`
                 <div class="col-6">
@@ -111,6 +112,7 @@ function iniciar(url,tabla){
                 `
             })
             $('#pedido').html(modulo);
+            $('#id-ariculo').val(id);
             $('.boton-enviar').slideDown(300);
         });
     })
@@ -131,19 +133,23 @@ function iniciar(url,tabla){
      
     })
 
-    function retornarId(id){//recibe el id desde traer individual  
-        // enviar pedido pendiente a pedido realizado
-        $(document).on('click', '#pedido-cancelado', function() {
+    
+   
+        $("#pedido-cancelado").click(function(e){
+            var id = $('#id-ariculo').val();//recibe el id desde traer individual  
+            // enviar pedido pendiente a pedido realizado
+            console.log(id);
             if(confirm('¿Este pedido ya se ha cancelado? Será enviado a pedidos realizados')) {
                 // let id = $(this).attr('elId');
                 $.post('precesos-pedidos/pedido-cancelado.php', {id}, function (respuesta) {
                       alert(respuesta);
                     traerPedidos();
                 });
+                 e.preventDefault();
             }        
         })
         
-    }
+    
 
         $('#posicion-pedido').scroll(function(){//scroll es el metodo
             if($(this).scrollTop() > -100){//de esta forma le digo que si al hacer scroll supero los 100px con respcto al top entonces haga lo que sigue 

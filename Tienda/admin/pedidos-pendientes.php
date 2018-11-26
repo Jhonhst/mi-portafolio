@@ -25,7 +25,8 @@
                 </div>
                 <div class="boton-enviar ">
                     <p class="text-center">¿El pedido ya esta cancelado?
-                        <button class="btn btn-success " id="pedido-cancelado">Si</button>
+                        <button class="btn btn-success" id="pedido-cancelado">Si</button>
+                        <input type="hidden" id="id-ariculo" value="">
                     </p>
                 </div>    
             </div>

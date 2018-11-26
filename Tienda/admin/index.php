@@ -30,7 +30,7 @@
       <p>Usuario: admin</p>
       <p>Contraseña: admin</p>
 
-      <a href="../index.php">Página Principal</a>
+      <a href="index.php">Página Principal</a>
       <button class="btn btn-lg btn-primary btn-block" id="ingresar-sesion"> Ingresar</button>
       <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p> -->
       <!-- <input type="hidden" id="borrar-dos" value="renombrar"> -->
