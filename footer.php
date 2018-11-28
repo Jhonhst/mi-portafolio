@@ -55,6 +55,20 @@
 
         <?php endforeach ?>
 
+        <?php foreach($ejecucion_dos as $dato): ?> 
+
+        var imagen = $('#imagen-galeria<?php echo $dato['id'] ?>');
+        var descripcion = $('#descripcion-proyecto<?php echo $dato['id'] ?>');
+        var botonr = $('#boton-galeria<?php echo $dato['id'] ?>');
+
+        const actuar<?php echo $dato['id'] ?> = new Galeria(imagen,descripcion,botonr);
+
+        $('#fas<?php echo $dato['id'] ?>').on('click',function(){
+            actuar<?php echo $dato['id'] ?>.opacidad();
+        })
+
+        <?php endforeach ?>
+
         //tremendo ciclo el cual em ayuda a evitar hacer un codigo por cada uno le agrego el id a cada cosa para que el id="" sea distinto y retorne error(tener en cuenta que este ciclo es exactamnte el mismo de la galeria de arribita)
 
         //fin para efecto de opacidad de la galeria del index

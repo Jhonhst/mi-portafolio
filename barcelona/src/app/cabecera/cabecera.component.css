@@ -1,0 +1,12 @@
+.navbar-bg{
+    background-color: rgba(16, 16, 114, 0);
+}
+.titulo{
+    font-size: 1.3rem;
+    color: rgb(231, 4, 4);
+
+}
+.link-menu{
+    color: yellow;
+    /* font-size: 1.5rem; */
+}

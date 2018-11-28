@@ -1,0 +1,26 @@
+.image{
+    width: 100%;
+}
+/* bordee */
+.bordee {
+    width: 100%; 
+    background-size: cover;
+    box-shadow:0 0  20px rgb(16, 16, 114);   
+    /* border: 1px solid black; */
+    /* padding-left: 10%; */
+}
+.imagen{
+    margin-left: 10%;
+    margin-top: 5px;
+}
+@media only screen and (max-width: 575px) {
+    .imagen{
+        margin-left: 0%;
+        margin-top: 5px;
+    }
+}
+
+.contenido{
+    margin: -5px;
+
+}

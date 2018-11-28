@@ -1,0 +1,7 @@
+.bordee {
+    width: 100%; 
+    background-size: cover;
+    box-shadow:0 0  20px rgb(16, 16, 114);   
+    /* border: 1px solid black; */
+    /* padding-left: 10%; */
+}

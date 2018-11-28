@@ -44,10 +44,29 @@
        <!--fin cuerpo de proyectos slider-->
 
          <!--inicio cuerpo de proyectos galeria-->
+         <!-- para los tres de la parte superios -->
     <div class="container mt-5">
-        <div class="row">
+        <div class="row justify-content-md-center">
             <?php foreach($ejecucion as $dato): ?> 
             <div class="col-12 col-md-6 col-lg-4 mt-3 fondo-galerias bordee">   
+
+                <p class="texto-galeria"><?php echo $dato['titulo'] ?><span><i id="fas<?php echo $dato['id'] ?>" class="fas fa-bars fass"></i></span></p>
+
+                <img src="<?php echo $dato['imgpf'] ?>" class="img-fluid imagen-galeria bordee" alt="" id="imagen-galeria<?php echo $dato['id'] ?>">
+
+                <p class="descripcion-proyecto text-center" id="descripcion-proyecto<?php echo $dato['id'] ?>"><?php echo $dato['descripcion'] ?></p>
+
+                <a class="btn btn-danger boton-galeria" href="proyecto.php?title=<?php echo $dato['titulo'] ?>" id="boton-galeria<?php echo $dato['id'] ?>" type="button">Accede</a>
+            </div>
+            <?php endforeach ?>
+
+        </div>
+    </div>
+     <!-- para los dos de la parte inferior -->
+    <div class="container mt-5">
+        <div class="row justify-content-md-center">
+            <?php foreach($ejecucion_dos as $dato): ?> 
+            <div class="col-12 col-md-6 col-lg-4  mt-3 ml-lg-5 mb-lg-5 fondo-galerias bordee">   
 
                 <p class="texto-galeria"><?php echo $dato['titulo'] ?><span><i id="fas<?php echo $dato['id'] ?>" class="fas fa-bars fass"></i></span></p>
 

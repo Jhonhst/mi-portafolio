@@ -1,8 +1,11 @@
 <?php
 include_once 'conexion.php';
 
-$sql="SELECT * from registros";
+$sql="SELECT * from registros LIMIT 3";
 $ejecucion=mysqli_query($con,$sql);
+
+$sql_dos="SELECT * from registros LIMIT 3,2";
+$ejecucion_dos=mysqli_query($con,$sql_dos);
 
 //incluyo esta pagina para poder mostrar el titulo es caso de que entremos a un proyecto éste tenda el nombre de el al lado de el tululo que coloque como principal Jhon Sánchez
 include 'traer.php'; 

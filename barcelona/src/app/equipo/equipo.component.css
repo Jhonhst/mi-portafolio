@@ -1,0 +1,41 @@
+.datos{
+    background-color: rgb(126, 19, 19);
+}
+
+.datos:hover{
+    background-color: rgb(12, 4, 83);
+}
+.numero{
+    font-size: 2rem;
+    color: white;
+    padding: 15px;
+}
+.nombre{
+    font-size: 1.3rem;
+    color: white;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 20%;
+}
+.posision{
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20%;
+}
+@media only screen and (max-width: 575px) {
+    .numero{
+        font-size: 1.5rem;
+        padding: 15px;
+
+    }
+    .nombre{
+        font-size: 1rem;
+
+    }
+    .posision{
+        font-size: 0.8rem;
+
+    }
+}
