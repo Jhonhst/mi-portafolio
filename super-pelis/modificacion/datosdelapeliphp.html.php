@@ -31,17 +31,17 @@
         $direccion = $_GET['id_movie'];
 
         // manda los datos
-        $url = "https://api.themoviedb.org/3/movie/".$direccion."?api_key=bc122acc3ceeabb52aef5dd77dc6cc5a&language=es";//optener mayoria de datos
+        $url = "https://api.themoviedb.org/3/movie/".$direccion."?api_key=&language=es";//optener mayoria de datos
         $json = file_get_contents($url);//aqui llama los datos
         $datos = json_decode($json,true);//aqui me decodifica el json
     
         // manda las imagenes
-        $urlimg = "https://api.themoviedb.org/3/movie/".$direccion."/images?api_key=bc122acc3ceeabb52aef5dd77dc6cc5a";//para optener las imagenes
+        $urlimg = "https://api.themoviedb.org/3/movie/".$direccion."/images?api_key=";//para optener las imagenes
         $jsonimg = file_get_contents($urlimg);//aqui llama los datos
         $datosimg = json_decode($jsonimg,true);//aqui me decodifica el json
 
         // manda el trailer
-        $urltrailer = "https://api.themoviedb.org/3/movie/".$direccion."/videos?api_key=bc122acc3ceeabb52aef5dd77dc6cc5a&language=es";//para optener las imagenes
+        $urltrailer = "https://api.themoviedb.org/3/movie/".$direccion."/videos?api_key=&language=es";//para optener las imagenes
         $jsontrailer = file_get_contents($urltrailer);//aqui llama los datos
         $datostrailer = json_decode($jsontrailer,true);//aqui me decodifica el json
 
